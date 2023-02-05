@@ -1,0 +1,4 @@
+{
+    "token":"token of your bot",
+    "allowed":["ids (integers not strings) of people you want to allow to censor"]
+}
