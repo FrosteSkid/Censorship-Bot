@@ -8,7 +8,7 @@ intents.message_content = True
 bot = bridge.Bot(command_prefix=".", intents=intents)
 config = json.load(open('config.json'))
 allowed = config['allowed']
-token = config['token']
+TOKEN = config['token']
 
 @bot.event
 async def on_ready():
@@ -76,4 +76,4 @@ async def on_message(message):
         await sleep(3)
         await msgstoptalking.delete()
 
-bot.run(token)
+bot.run(TOKEN)
